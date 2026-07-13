@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     "captcha",
     'django.contrib.humanize',
     "django_summernote",
+    "django.contrib.sites",
+    "django.contrib.sitemaps",
 ]
 
 MIDDLEWARE = [
@@ -167,3 +169,5 @@ SUMMERNOTE_CONFIG = {
         ],
     }
 }
+
+SITE_ID = 2
