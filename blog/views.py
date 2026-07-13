@@ -36,7 +36,10 @@ def blog_single_view(request,pid):
 
     posts = Post.objects.filter(status=1)
     post = get_object_or_404(posts,pk=pid)
-    return render(request,'blog/blog-single.html',{'post':post})
+    comments = Comment.objects.filter(post=post.id,approved=True)
+    form = CommentForm()
+    context = {'post':post,'form':form,'comments':comments}
+    return render(request,'blog/blog-single.html',context)
 
 def blog_search_view(request):
 
