@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     # Third party
     "taggit",
     "captcha",
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [
