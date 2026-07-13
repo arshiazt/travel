@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "django_summernote",
     "django.contrib.sites",
     "django.contrib.sitemaps",
+    "robots",
 ]
 
 MIDDLEWARE = [
@@ -171,3 +172,9 @@ SUMMERNOTE_CONFIG = {
 }
 
 SITE_ID = 2
+
+# robots setting
+
+ROBOTS_USE_SITEMAP = True
+ROBOTS_USE_HOST = True
+ROBOTS_USE_SCHEME_IN_HOST = True
